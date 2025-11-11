@@ -2,11 +2,12 @@ import Sequelize from "sequelize";
 import createDataBase from "./createDB.js";
 
 const DB = "estoque_autopecas";
-const usuario = "root";
-const senha = "root";
+const usuario = "useradmin";
+const senha = "admin@123";
 
 const sequelize = new Sequelize(DB, usuario, senha, {
-  host: "localhost",
+  host: "serverestoquecar.mysql.database.azure.com",
+  //host: "localhost",
   dialect: "mysql",
 });
 
