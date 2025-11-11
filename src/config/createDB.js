@@ -9,7 +9,7 @@ async function createDataBase(dbName,dbUser,dbPassword) {
 
     
     const connection = mysql.createConnection({
-        host: "localhost",
+        host: "serverestoquecar.mysql.database.azure.com",
         user: dbUser,
         password: dbPassword,
     });
