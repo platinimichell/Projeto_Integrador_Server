@@ -9,6 +9,12 @@ const sequelize = new Sequelize(DB, usuario, senha, {
   host: "serverestoquecar.mysql.database.azure.com",
   //host: "localhost",
   dialect: "mysql",
+  dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false,
+    }
+  }
 });
 
 
